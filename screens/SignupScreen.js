@@ -97,10 +97,10 @@ export default function SignupScreen() {
 
         <TouchableOpacity
           style={styles.loginButton}
-          onPress={
-            () => console.log("pwd1: " + password1 + "\tpwd2: " + password2)
-            // navigate to HomePage
-          }
+          onPress={() => {
+            console.log("pwd1: " + password1 + "\tpwd2: " + password2);
+            navigation.navigate("Dashboard");
+          }}
         >
           <Text style={{ fontFamily: bold }}>Sign Up</Text>
         </TouchableOpacity>
